@@ -80,7 +80,6 @@ p a {
 }
 
 .masthead.segment {
-  background-image: url(images/bg.jpg);
   -webkit-background-size: cover;
   background-size: cover;
   margin: 0em;
