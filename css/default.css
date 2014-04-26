@@ -210,3 +210,19 @@ Responsive
   -webkit-box-shadow: none !important;
   box-shadow: none !important;
 }
+
+.ui.splash.section {
+  background: url(../images/working.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.ui.inverted.section {
+  background-color: rgb(34, 34, 34);
+}
+
+.ui.splash.section  .ui.masthead.segment {
+  background-color: rgba(0, 0, 0, 0.5);
+}
