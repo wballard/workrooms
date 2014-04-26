@@ -12,8 +12,9 @@
     <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Open+Sans:300italic,400,300,700' rel='stylesheet' type='text/css'>
 
     <link rel="stylesheet" type="text/css" href="css/semantic.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/jquery.fullPage.css">
     <link rel="stylesheet" type="text/css" href="css/default.css">
-    <link href="css/font-awesome.min.css" rel="stylesheet">
 
     <script src="javascript/jquery-2.1.0.min.js"></script>
     <script src="javascript/semantic.min.js"></script>
@@ -21,11 +22,11 @@
     <script src="javascript/default.js"></script>
     <script type="text/javascript">
       $(document).ready(function() {$('#fullpage').fullpage({
-        'verticalCentered': false,
         'css3': true,
-        'slidesColor': ['#222', '#fff', '#222', '#fff'],
         'navigation': true,
         'navigationPosition': 'right',
+        'navigationTooltips': ['fullPage.js', 'Powerful', 'Amazing', 'Simple', 'Contact'],
+        'easing': 'easeOutBack'
       });
       });
     </script>
@@ -33,154 +34,157 @@
   <body>
     <div id="fullpage">
 
-      <div class="ui inverted section grid masthead segment">
-        <div class="column">
-          <div class="inverted secondary pointing ui menu">
-            <h1 class="ui main header item">Workrooms</h1>
-          </div>
-          <div class="ui hidden information">
-            <h1 class="ui inverted header">
-              Together, Remotely
-            </h1>
-            <p>
-              Video, voice, and text as easy as dropping by your desk.
-            </p>
-            <div class="large basic inverted animated fade ui button">
-              <div class="visible content"><i class="ui icon red fa fa-group"></i>Get Started</div>
-              <div class="hidden content">
-                <a href="https://workrooms.glgresearch.com/workrooms">
-                  <i class="ui icon red fa fa-group"></i>Together Now
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="ui section grid overview segment">
-        <div class="ui two wide column"></div>
-        <div class="twelve wide column">
-          <div class="ui two column center aligned stackable divided grid">
-            <div class="column">
-              <div class="ui icon header">
-                <i class="circular red fa fa-group link icon"></i>
-                Always Ready
-              </div>
-              <p>Right in your Chrome, no download needed.</p>
-            </div>
-            <div class="column">
-              <div class="ui icon header">
-                <i class="circular red fa fa-smile-o link icon"></i>
-                No Registration
-              </div>
-              <p>We all hate it, no new signups, no logging in.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="ui inverted section grid stackable relaxed feature segment">
-        <div class="row">
+      <div class="ui inverted section segment">
+        <div class="ui inverted grid masthead segment">
           <div class="column">
-            <h1 class="center aligned ui header">
-              The Problem
-            </h1>
-          </div>
-        </div>
-        <div class="row">
-          <div class="ten wide column">
-            <p>
-              Commuting and congestion is killing us and our environment. There is very little
-              positive to say about commuting.
-            </p>
-            <p>
-              We're not commuting for fun, we're commuting to work. But many of us are
-              engaged in knowledge work, computing, and activities that don't require
-              physical presense to complete.
-            </p>
-            <p>
-              What keeps us at work? Collaboration? Tradition? Lack of tools that let us
-              truly work together, remotely?
-            </p>
-            <p>
-              How do we end it?
-            </p>
-          </div>
-          <div class="six wide column">
-            <div class="ui secondary form segment">
-              <h2 class="ui">Congestion Costs</h2>
-              <div class="ui list">
-                <li class="item">
-                  <i class="dollar icon"></i>
-                  <div class="description">In the US alone, commuting congestion wastes $121 billion annually.</div>
-                </li>
-                <li class="item">
-                  <i class="cloud icon"></i>
-                  <div class="description">...and generates 56 billion pounds of carbon.<a href="http://mobility.tamu.edu/ums/media-information/press-release/">*</a></div>
-                </li>
-              </div>
-              <h2 class="ui">Commuting Costs</h2>
-              <div class="ui list">
-                <li class="item">
-                  <i class="road icon"></i>
-                  <div class="description">In the US alone, 137 million commute 25 minutes each way.</div>
-                </li>
-                <li class="item">
-                  <i class="time icon"></i>
-                  <div class="description">Thats 1712500 million minutes.</div>
-                </li>
-                <li class="item">
-                  <i class="bullhorn icon"></i>
-                  <div class="description">Huh? That's 2.8 billion hours per year.<a href="http://www.census.gov/prod/2011pubs/acs-15.pdf">*</a></div>
-                </li>
+            <div class="inverted secondary pointing ui menu">
+              <h1 class="ui main header item">Workrooms</h1>
+            </div>
+            <div class="ui hidden information">
+              <h1 class="ui inverted header">
+                Together, Remotely
+              </h1>
+              <p>
+                Video, voice, and text as easy as dropping by your desk.
+              </p>
+              <div class="large basic inverted animated fade ui button">
+                <div class="visible content"><i class="ui icon red fa fa-group"></i>Get Started</div>
+                <div class="hidden content">
+                  <a href="https://workrooms.glgresearch.com/workrooms">
+                    <i class="ui icon red fa fa-group"></i>Together Now
+                  </a>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      <div class="ui section grid stackable relaxed feature segment">
-        <div class="row">
+      <div class="ui overview section segment">
+        <div class="ui two column center aligned stackable divided grid segment">
           <div class="column">
-            <h1 class="center aligned ui header">
-              Video, Voice, &amp; Text - Right in Your Browser
-            </h1>
+            <div class="ui icon header">
+              <i class="circular red fa fa-group link icon"></i>
+              Always Ready
+            </div>
+            <p>Right in your Chrome, no download needed.</p>
           </div>
-        </div>
-        <div class="row">
-          <div class="eight wide column">
-            <h2 class="ui header">Web Browser FTW</h2>
-            <p>Workrooms is an always on, virtual presence work system based around
-              audio and video collaboration that is just as easy as dropping by your desk.
-            </p>
-            <p>Workrooms extends your browser for collaboration. No need to remember
-              to use or install another app.</p>
-            <p>Calls come in while you are working, and can be simply left in a browser tab. No more
-              window shuffling.</p>
-          </div>
-          <div class="eight wide column">
-            <h2 class="ui header">Peer-To-Peer Privacy</h2>
-            <p>Workrooms runs calls over <a href="http://www.webrtc.org">WebRTC</a>, the
-              next generation of video/audio/screen conference technology. The magic is that
-              it connects you directly, the server doesn't ever touch your call.
-            </p>
-            <h2 class="ui header">No Metadata</h2>
-            <p>The Workrooms Server, throws call data away as soon as
-              you disconnect. And only keeps call data in memory.</p>
-            <p>Subpoena that, Buddy!</p>
+          <div class="column">
+            <div class="ui icon header">
+              <i class="circular red fa fa-smile-o link icon"></i>
+              No Registration
+            </div>
+            <p>We all hate it, no new signups, no logging in.</p>
           </div>
         </div>
       </div>
 
-      <div class="ui inverted section grid segment">
-        <div class="row">
-          <div class="ui eight wide column">
+      <div class="ui inverted section segment">
+        <div class="ui inverted grid stackable relaxed feature segment">
+          <div class="row">
+            <div class="column">
+              <h1 class="center aligned ui header">
+                The Problem
+              </h1>
+            </div>
+          </div>
+          <div class="row">
+            <div class="ten wide column">
+              <p>
+                Commuting and congestion is killing us and our environment. There is very little
+                positive to say about commuting.
+              </p>
+              <p>
+                We're not commuting for fun, we're commuting to work. But many of us are
+                engaged in knowledge work, computing, and activities that don't require
+                physical presense to complete.
+              </p>
+              <p>
+                What keeps us at work? Collaboration? Tradition? Lack of tools that let us
+                truly work together, remotely?
+              </p>
+              <p>
+                How do we end it?
+              </p>
+            </div>
+            <div class="six wide column">
+              <div class="ui secondary form segment">
+                <h2 class="ui">Congestion Costs</h2>
+                <div class="ui list">
+                  <li class="item">
+                    <i class="dollar icon"></i>
+                    <div class="description">In the US alone, commuting congestion wastes $121 billion annually.</div>
+                  </li>
+                  <li class="item">
+                    <i class="cloud icon"></i>
+                    <div class="description">...and generates 56 billion pounds of carbon.<a href="http://mobility.tamu.edu/ums/media-information/press-release/">*</a></div>
+                  </li>
+                </div>
+                <h2 class="ui">Commuting Costs</h2>
+                <div class="ui list">
+                  <li class="item">
+                    <i class="road icon"></i>
+                    <div class="description">In the US alone, 137 million commute 25 minutes each way.</div>
+                  </li>
+                  <li class="item">
+                    <i class="time icon"></i>
+                    <div class="description">Thats 1712500 million minutes.</div>
+                  </li>
+                  <li class="item">
+                    <i class="bullhorn icon"></i>
+                    <div class="description">Huh? That's 2.8 billion hours per year.<a href="http://www.census.gov/prod/2011pubs/acs-15.pdf">*</a></div>
+                  </li>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="ui section segment">
+        <div class="ui grid stackable relaxed feature segment">
+          <div class="row">
+            <div class="column">
+              <h1 class="center aligned ui header">
+                Video, Voice, &amp; Text - Right in Your Browser
+              </h1>
+            </div>
+          </div>
+          <div class="row">
+            <div class="eight wide column">
+              <h2 class="ui header">Web Browser FTW</h2>
+              <p>Workrooms is an always on, virtual presence work system based around
+                audio and video collaboration that is just as easy as dropping by your desk.
+              </p>
+              <p>Workrooms extends your browser for collaboration. No need to remember
+                to use or install another app.</p>
+              <p>Calls come in while you are working, and can be simply left in a browser tab. No more
+                window shuffling.</p>
+            </div>
+            <div class="eight wide column">
+              <h2 class="ui header">Peer-To-Peer Privacy</h2>
+              <p>Workrooms runs calls over <a href="http://www.webrtc.org">WebRTC</a>, the
+                next generation of video/audio/screen conference technology. The magic is that
+                it connects you directly, the server doesn't ever touch your call.
+              </p>
+              <h2 class="ui header">No Metadata</h2>
+              <p>The Workrooms Server, throws call data away as soon as
+                you disconnect. And only keeps call data in memory.</p>
+              <p>Subpoena that, Buddy!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="ui inverted section segment">
+        <div class="ui two column center aligned inverted divided grid stackable segment">
+          <div class="column">
             <h3 class="ui header">Source</h3>
             <div class="ui inverted link list">
               <a class="ui link item" href="https://github.com/wballard/workrooms.server">Server</a>
             </div>
           </div>
-          <div class="ui eight wide column">
+          <div class="column">
             <h3 class="ui header">Contact Us</h3>
             <div class="ui inverted link list">
               <a class="ui link item" href="mailto:wballard@glgroup.com">wballard@glgroup.com</a>

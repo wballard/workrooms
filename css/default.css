@@ -183,10 +183,14 @@ Responsive
     font-size: 3em;
   }
 
+  .ui.grid.segment {
+    padding: 1rem;
+  }
+
 }
 
-@media only screen and (max-width : 1000px) {
-
+.ui.grid.segment {
+  padding: 3rem;
 }
 
 .ui.rounded.image {
@@ -202,6 +206,7 @@ Responsive
   font-size: 2rem;
 }
 
-.ui.section {
-  padding: 3rem;
+.grid.masthead.segment {
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
 }
