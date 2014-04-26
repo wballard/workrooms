@@ -201,3 +201,7 @@ Responsive
 .ui.main.header.item {
   font-size: 2rem;
 }
+
+.ui.section {
+  padding: 3rem;
+}
