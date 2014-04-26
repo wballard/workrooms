@@ -131,7 +131,16 @@ Global
 Responsive
  *******************************/
 
-/* Mobile Only */
+
+@media only screen and (max-width : 2768px) {
+  .ui.splash.section {
+    background: url(../images/working.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+}
 
 @media only screen and (max-width : 768px) {
   .ui.page.grid.segment {
@@ -187,6 +196,18 @@ Responsive
     padding: 1rem;
   }
 
+  .ui.splash.section {
+    background: url(../images/working_small.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  .ui.icon.header .circular.icon {
+    font-size: 1.5em;
+  }
+
 }
 
 .ui.grid.segment {
@@ -210,14 +231,6 @@ Responsive
   -webkit-box-shadow: none !important;
   box-shadow: none !important;
   text-shadow: rgba(0, 0, 0, 0.5) 0px 1px 2px;
-}
-
-.ui.splash.section {
-  background: url(../images/working.jpg) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
 }
 
 .ui.inverted.section {
