@@ -240,3 +240,7 @@ Responsive
 .ui.splash.section  .ui.masthead.segment {
   background-color: rgba(0, 0, 0, 0.5);
 }
+
+.description {
+  margin-left: 2.5em;
+}
