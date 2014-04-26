@@ -1,6 +1,6 @@
 /*******************************
-            Global
-*******************************/
+Global
+ *******************************/
 
 html,
 body {
@@ -19,8 +19,8 @@ body {
 }
 
 /*******************************
-          UI Overrides
-*******************************/
+UI Overrides
+ *******************************/
 
 .secondary img {
   max-width: 100%;
@@ -67,8 +67,8 @@ p a {
 }
 
 /*******************************
-            Global
-*******************************/
+Global
+ *******************************/
 
 .menu .right.menu > .mobile.item {
   display: none;
@@ -128,8 +128,8 @@ p a {
 }
 
 /*******************************
-          Responsive
-*******************************/
+Responsive
+ *******************************/
 
 /* Mobile Only */
 
@@ -187,4 +187,17 @@ p a {
 
 @media only screen and (max-width : 1000px) {
 
+}
+
+.ui.rounded.image {
+  -webkit-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+.ui.secondary.inverted.pointing.menu {
+  border-bottom-width: 1px;
+}
+
+.ui.main.header.item {
+  font-size: 2rem;
 }
