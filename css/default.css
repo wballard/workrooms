@@ -244,3 +244,16 @@ Responsive
 .description {
   margin-left: 2.5em;
 }
+
+.glgred {
+  color: #ef272d !important;
+}
+
+.ui.secondary.callout.segment {
+  color: rgba(255,255,255,.8);
+  background-color: rgba(255,255,255, 0.2);
+}
+
+.ui.secondary.callout.segment .item .description {
+  color: rgba(255,255,255,.8);
+}
