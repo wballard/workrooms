@@ -1,6 +1,10 @@
 /*******************************
 Global
  *******************************/
+@font-face {
+  font-family: 'NHaasGroteskDSW02-45Lt';
+  src: url('../fonts/NHaasGroteskDSW02-45Lt.woff') format('woff');
+}
 
 html,
 body {
@@ -9,7 +13,7 @@ body {
 }
 
 body {
-  font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-family: "NHaasGroteskDSW02-45Lt", "Helvetica Neue", "Helvetica", sans-serif;
   background: #FFFFFF;
   margin: 0px;
   padding: 0px;
@@ -24,10 +28,6 @@ UI Overrides
 
 .secondary img {
   max-width: 100%;
-}
-
-.ui.header {
-  font-family: 'Source Sans Pro', "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 }
 
 .ui.header,
@@ -132,17 +132,27 @@ Responsive
  *******************************/
 
 
-@media only screen and (max-width : 2768px) {
+@media only screen and (min-width: 769px) {
   .ui.splash.section {
-    background: url(../images/working.jpg) no-repeat center center fixed; 
+    background: url(../images/working.jpg) no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
   }
+  .ui.problem.section {
+    background: url(../images/traffic.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  .ui.grid.segment {
+    padding: 3rem;
+  }
 }
 
-@media only screen and (max-width : 768px) {
+@media only screen and (max-width: 768px) {
   .ui.page.grid.segment {
     padding-top: 2rem;
     padding-bottom: 2rem;
@@ -160,36 +170,31 @@ Responsive
     font-size: 1.5em;
   }
 
-  .masthead.segment {
+  h2.ui.header {
+    font-size: 1.0em;
+    margin: 0;
+  }
+
+  p {
+    font-size: 0.7em;
+  }
+
+  .ui.grid.segment {
     -webkit-background-size: auto;
     background-size: auto;
-  }
-
-  .masthead.segment .information {
-  }
-
-  .masthead.segment .image {
+    padding-left: 0.5em;
   }
 
   .masthead.segment .button {
     font-size: 1rem;
   }
 
-  .overview .divided.grid .header .icon {
-    font-size: 1.5em;
-  }
-
   .overview .divided.grid .header + p {
     min-height: 0px;
   }
 
-  .masthead.segment .column {
+  .ui.segment .column {
     font-size: 0.7rem;
-  }
-
-
-  i.huge.icon {
-    font-size: 3em;
   }
 
   .ui.grid.segment {
@@ -197,7 +202,15 @@ Responsive
   }
 
   .ui.splash.section {
-    background: url(../images/working_small.jpg) no-repeat center center fixed; 
+    background: url(../images/working_small.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  .ui.problem.section {
+    background: url(../images/traffic_small.jpg) no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -205,14 +218,15 @@ Responsive
   }
 
   .ui.icon.header .circular.icon {
-    font-size: 1.5em;
+    font-size: 1.0em;
   }
 
 }
 
-.ui.grid.segment {
-  padding: 3rem;
+.ui.icon.header {
+  margin: 0;
 }
+
 
 .ui.rounded.image {
   -webkit-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
@@ -228,16 +242,14 @@ Responsive
 }
 
 .grid.masthead.segment {
-  -webkit-box-shadow: none !important;
-  box-shadow: none !important;
-  text-shadow: rgba(0, 0, 0, 0.5) 0px 1px 2px;
+  text-shadow: rgba(0, 0, 0, 0.5) 0px 1px 1px !important;
 }
 
 .ui.inverted.section {
   background-color: rgb(34, 34, 34);
 }
 
-.ui.splash.section  .ui.masthead.segment {
+.ui.masthead.segment, .ui.inverted.segment {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
@@ -256,4 +268,8 @@ Responsive
 
 .ui.secondary.callout.segment .item .description {
   color: rgba(255,255,255,.8);
+}
+
+h1.ui.header, h2.ui.header {
+  text-shadow: rgba(0, 0, 0, 0.2) 0px 1px 1px;
 }
