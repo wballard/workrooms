@@ -257,6 +257,10 @@ Responsive
   background-color: rgba(0, 0, 0, 0.65);
 }
 
+.ui.segment {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
 .description {
   margin-left: 2.5em;
 }
